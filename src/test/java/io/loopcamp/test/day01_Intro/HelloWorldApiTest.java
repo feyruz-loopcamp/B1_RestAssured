@@ -17,6 +17,10 @@ public class HelloWorldApiTest {
         Response response = RestAssured.get(url);
 
         response.prettyPrint();
+        System.out.println(response.body().asString());
+        System.out.println(response.asString());
+
+        Assertions.assertTrue(response.asString().contains("Hello World!"));
 
     }
 
