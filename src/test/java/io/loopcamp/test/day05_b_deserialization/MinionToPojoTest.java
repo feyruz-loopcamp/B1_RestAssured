@@ -1,22 +1,14 @@
 package io.loopcamp.test.day05_b_deserialization;
 
 import io.loopcamp.pojo.Minion;
-import io.loopcamp.util.ConfigurationReader;
 
-import io.loopcamp.util.HRApiTestBase;
 import io.loopcamp.util.MinionTestBase;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
-import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static io.restassured.RestAssured.*;
